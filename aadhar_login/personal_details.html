@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aadhar details</title>
+    
+    <style>
+        
+        body{
+            font-style: Arial;
+            background: gray;
+            background-color: white;
+            box-sizing: content-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input[type="submit"]{
+            background-color: lightgreen;
+            text-align: center;
+            color: black;
+            border:black;
+            margin: 2px;
+            margin-left: 75px;
+            border: 1px solid gray;
+            line-height: 10h;
+            padding: 10px;
+            width: 72%;
+            margin-top: 20px;
+            border-radius: 50px;
+            cursor:pointer;
+        }
+        
+        input[type="text"] {
+            background-color: lightgray;
+            text-align: center;
+            color: black;
+            border:black;
+            margin: 2px;
+            margin-left: 75px;
+            border: 1px solid gray;
+            line-height: 10h;
+            padding: 10px;
+            width: 70%;
+            border-radius: 50px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    
+    <form method="post" onsubmit="showMessage(); return false;" >
+
+
+        <input type="text" name="name" placeholder="Name field" required>
+        <input type="text" name="DOB" placeholder="Date Of Birth" required>
+        <input type="text" name="phno" placeholder="ph no" required>
+        <input type="text" name="father name" placeholder="father name" required>
+        <input type="text" name="fathers occupation " placeholder="fathers occupation" required>
+        <input type="text" name="mothername" placeholder="mother's name" required>
+        <input type="text" name="occupation " placeholder="mother's occupation" required>
+        <input type="text" name="address " placeholder="address" required>
+        <input type="text" name="family income " placeholder="family income" required>
+        <input type="submit" value="submit">
+        
+    </form>
+   <script>function showMessage() {
+    alert("Form submitted successfully!");
+    window.location.href = "aad.html";
+    
+  }</script>
+    
+</body>
+
+</html>
